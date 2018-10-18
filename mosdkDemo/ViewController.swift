@@ -9,7 +9,7 @@
 import UIKit
 import MOSDK
 
-class ViewController: UIViewController,MODelegate {
+class ViewController: UIViewController,MODelegate,MOGameControlDelegate {
 
     @IBOutlet weak var versionLabel: UILabel!
     @IBOutlet weak var buildLabel: UILabel!
@@ -29,6 +29,9 @@ class ViewController: UIViewController,MODelegate {
         
         versionLabel.text = version
         buildLabel.text = build
+        
+        MO.init().setGameControlDelegate(self)
+        
         
         
        
@@ -94,6 +97,24 @@ class ViewController: UIViewController,MODelegate {
         self.requestProductBtn.isEnabled = false
         self.faqBtn.isEnabled = false
         
+    }
+    
+    //MRAK -- MOGameControlDelegate
+    
+    func shouldGo(toOfficialServer user: MOUser!) {
+        // 添加游戏服逻辑
+        let ovc = self.storyboard?.instantiateViewController(withIdentifier: "TestViewController")
+        
+        self.present(ovc!, animated: true, completion: nil)
+        
+        
+    }
+    
+    func shouldGo(toTestServer user: MOUser!) {
+        // 添加测试服逻辑
+        let ovc = self.storyboard?.instantiateViewController(withIdentifier: "OfficialViewController")
+        
+        self.present(ovc!, animated: true, completion: nil)
     }
 }
 

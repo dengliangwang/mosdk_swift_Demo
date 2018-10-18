@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DA2690D21785B3B00373A0C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA2690C21785B3B00373A0C /* TestViewController.swift */; };
+		1DA2690F21785B4F00373A0C /* OfficialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA2690E21785B4F00373A0C /* OfficialViewController.swift */; };
+		1DA2691321785CD900373A0C /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1DA2691021785CD700373A0C /* GoogleSignIn.bundle */; };
+		1DA2691421785CD900373A0C /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA2691121785CD800373A0C /* GoogleSignIn.framework */; };
+		1DA2691521785CD900373A0C /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA2691221785CD800373A0C /* GoogleSignInDependencies.framework */; };
 		1DD2F9F020E3ABF0006BCD92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD2F9EF20E3ABF0006BCD92 /* AppDelegate.swift */; };
 		1DD2F9F220E3ABF0006BCD92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD2F9F120E3ABF0006BCD92 /* ViewController.swift */; };
 		1DD2F9F520E3ABF0006BCD92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD2F9F320E3ABF0006BCD92 /* Main.storyboard */; };
@@ -84,6 +89,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1DA2690C21785B3B00373A0C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		1DA2690E21785B4F00373A0C /* OfficialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialViewController.swift; sourceTree = "<group>"; };
+		1DA2691021785CD700373A0C /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		1DA2691121785CD800373A0C /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		1DA2691221785CD800373A0C /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignInDependencies.framework; sourceTree = "<group>"; };
 		1DD2F9EC20E3ABF0006BCD92 /* mosdkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mosdkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD2F9EF20E3ABF0006BCD92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DD2F9F120E3ABF0006BCD92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -288,11 +298,13 @@
 				1DD2FC4B20E4B196006BCD92 /* CoreTelephony.framework in Frameworks */,
 				1DD2FC4920E4B18D006BCD92 /* SystemConfiguration.framework in Frameworks */,
 				1DD2FC4720E4B184006BCD92 /* CoreText.framework in Frameworks */,
+				1DA2691421785CD900373A0C /* GoogleSignIn.framework in Frameworks */,
 				1DD2FC4520E4B17B006BCD92 /* QuartzCore.framework in Frameworks */,
 				1DD2FC4320E4B172006BCD92 /* CoreGraphics.framework in Frameworks */,
 				1DD2FC4020E4B126006BCD92 /* MOSDK.framework in Frameworks */,
 				1DD2FC3020E4B126006BCD92 /* FBSDKShareKit.framework in Frameworks */,
 				1DD2FC3E20E4B126006BCD92 /* Partytrack.framework in Frameworks */,
+				1DA2691521785CD900373A0C /* GoogleSignInDependencies.framework in Frameworks */,
 				1DD2FC3B20E4B126006BCD92 /* AppsFlyerLib.framework in Frameworks */,
 				1DD2FC3C20E4B126006BCD92 /* Bolts.framework in Frameworks */,
 				1DD2FC3A20E4B126006BCD92 /* FBSDKLoginKit.framework in Frameworks */,
@@ -346,11 +358,16 @@
 				1DD2F9F120E3ABF0006BCD92 /* ViewController.swift */,
 				1DD2FB7A20E48B66006BCD92 /* ProductsTableViewController.swift */,
 				1DD2FB7C20E48B80006BCD92 /* ProductTableViewCell.swift */,
+				1DA2690C21785B3B00373A0C /* TestViewController.swift */,
+				1DA2690E21785B4F00373A0C /* OfficialViewController.swift */,
 				1DD2F9F320E3ABF0006BCD92 /* Main.storyboard */,
 				1DD2F9F620E3ABF9006BCD92 /* Assets.xcassets */,
 				1DD2F9F820E3ABF9006BCD92 /* LaunchScreen.storyboard */,
 				1DD2F9FB20E3ABF9006BCD92 /* Info.plist */,
 				1DD2FACA20E3B096006BCD92 /* mosdkDemo-Bridging-Header.h */,
+				1DA2691021785CD700373A0C /* GoogleSignIn.bundle */,
+				1DA2691121785CD800373A0C /* GoogleSignIn.framework */,
+				1DA2691221785CD800373A0C /* GoogleSignInDependencies.framework */,
 				1DD2FCB020E4B45D006BCD92 /* helpshift-sdk-ios-v6.3.0 */,
 				1DD2FC2820E4B124006BCD92 /* AppsFlyerLib.framework */,
 				1DD2FC2920E4B124006BCD92 /* Bolts.framework */,
@@ -691,6 +708,7 @@
 				1DD2FCF620E4B45D006BCD92 /* HelpshiftConfigDark.plist in Resources */,
 				1DD2FCF320E4B45D006BCD92 /* HelpshiftLocalizable.strings in Resources */,
 				1DD2FC3D20E4B126006BCD92 /* MOSDK.bundle in Resources */,
+				1DA2691321785CD900373A0C /* GoogleSignIn.bundle in Resources */,
 				1DD2F9F520E3ABF0006BCD92 /* Main.storyboard in Resources */,
 				1DD2FCF520E4B45D006BCD92 /* HelpshiftConfig.plist in Resources */,
 				1DD2FCF420E4B45D006BCD92 /* HsLocalization.bundle in Resources */,
@@ -719,6 +737,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA2690D21785B3B00373A0C /* TestViewController.swift in Sources */,
+				1DA2690F21785B4F00373A0C /* OfficialViewController.swift in Sources */,
 				1DD2F9F220E3ABF0006BCD92 /* ViewController.swift in Sources */,
 				1DD2FB7D20E48B80006BCD92 /* ProductTableViewCell.swift in Sources */,
 				1DD2FB7B20E48B66006BCD92 /* ProductsTableViewController.swift in Sources */,
